@@ -1,0 +1,18 @@
+
+<h2>Liste des Enseignants</h2>
+
+  <div class="list-group">
+    <section *ngFor="let ens of Ensliste" >
+    <a class="list-group-item" (click)="onSelect(ens)">{{ens.nom_ens}} {{ens.prenom_ens}}</a>
+    <div class="list-group-item" *ngIf="ens==selectedEns"><app-enseignant-detail [ens]="selectedEns"></app-enseignant-detail></div>
+  </section>
+  </div>
+
+<div>
+  <div *ngIf="click==false"><button class="btn btn-primary" (click)="OnClick()">Ajouter un enseignant</button></div>
+  <div *ngIf="click==true"><br><button class="btn btn-primary" (click)="OnClick()">Annuler</button>
+    <app-enseignant-ajout></app-enseignant-ajout></div>
+</div>
+
+
+

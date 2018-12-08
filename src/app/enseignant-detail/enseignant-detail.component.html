@@ -1,0 +1,20 @@
+<div *ngIf="ens">
+
+
+    <label>nom:
+      <input [(ngModel)]="ens.nom_ens" placeholder="nom">
+    </label>
+
+
+    <label> prenom:
+      <input [(ngModel)]="ens.prenom_ens" placeholder="prenom">
+    </label>
+
+  <label> mail:
+    <input [(ngModel)]="ens.email" placeholder="prenom">
+  </label>
+    <button class="btn btn-primary"  (click)="save()">Sauvegarder</button>
+    <button class="btn btn-primary"  (click)="delete()">Supprimer</button>
+
+</div>
+
