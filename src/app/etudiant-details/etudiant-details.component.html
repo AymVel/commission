@@ -1,0 +1,31 @@
+
+<div *ngIf="etu" class="col-lg-offset-1 col-lg-6">
+
+<h1>Details de l'etudiant {{etu.nom_etu}}</h1>
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="form-group" >
+      <label for="nomEtu">
+        Nom :
+      </label>
+      <input type="text" id="nomEtu"  [(ngModel)]="etu.nom_etu" placeholder="nom" #nomEtu class="form-control " name="nom" >
+      <label for="prenomEtu">
+        Prenom :
+      </label>
+      <input type="text" id="prenomEtu"  [(ngModel)]="etu.prenom_etu" placeholder="prenom" #prenomEns class="form-control"  name="prenom" >
+
+
+      <label for="descriptif">
+        Mail :
+      </label>
+      <textarea type="text" id="descriptif" [(ngModel)]="etu.descriptif" #descriptif class="form-control" name="descriptif" ></textarea>
+
+
+    </div>
+    <div>
+      <button class="btn btn-primary"  (click)="save()">Sauvegarder</button>
+      <button class="btn btn-primary"  (click)="delete()">Supprimer</button>
+    </div>
+  </div>
+</div>
+</div>

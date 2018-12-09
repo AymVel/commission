@@ -1,0 +1,25 @@
+<div class="col-lg-offset-1 col-lg-6">
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="form-group" >
+      <label for="nomEtu">
+        Nom :
+      </label>
+      <input type="text" id="nomEtu" #nomEtu class="form-control " name="nom" >
+      <label for="prenomEtu">
+        Prenom :
+      </label>
+      <input type="text" id="prenomEtu" #prenomEtu class="form-control"  name="prenom" >
+
+
+      <label for="descriptif">
+        Description :
+      </label>
+      <textarea type="text" id="descriptif" #descriptif class="form-control" name="descriptif" ></textarea>
+
+    </div>
+    <button id="btn" (click)="add(nomEtu.value,prenomEtu.value,descriptif.value);"
+            class="btn btn-primary">Enregistrer</button>
+
+  </div>
+</div>
