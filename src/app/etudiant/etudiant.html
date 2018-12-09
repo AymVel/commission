@@ -1,0 +1,27 @@
+<h2>Liste des Etudiants</h2>
+<div class="row">
+  <div class="col-lg-1">
+    <div *ngIf="click==false"><button class="btn btn-primary" (click)="OnClick();">Ajouter un etudiant</button></div>
+    <div *ngIf="click==true"><br><button class="btn btn-primary" (click)="OnClick()">Annuler</button></div>
+  </div>
+
+</div>
+<div class="row top-buffer">
+<table class="table mr-1 col-lg-3" >
+  <tr  *ngFor="let etu of Etudiantliste" >
+    <td >
+    <a class="list-group-item" (click)="onSelect(etu)">{{etu.nom_etu}} {{etu.prenom_etu}}</a>
+    </td>
+  </tr>
+
+</table>
+<div><app-etudiant-details [etu]="selectedEtu"></app-etudiant-details>
+  <div *ngIf="click==true"><app-etudiant-ajout></app-etudiant-ajout></div>
+</div>
+</div>
+
+
+
+
+
+

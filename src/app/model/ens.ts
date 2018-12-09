@@ -3,5 +3,5 @@ export class Enseignant{
   public id: number,
   public nom_ens: string,
   public prenom_ens: string,
-  public email: string){}
+  public email: string) {}
 }

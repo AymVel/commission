@@ -7,10 +7,12 @@ import { EnseignantComponent } from './enseignant/enseignant.component';
 
 import { FormsModule } from '@angular/forms';
 import { EnseignantDetailComponent } from './enseignant-detail/enseignant-detail.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { EtudiantComponent } from './etudiant/etudiant.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { EnseignantAjoutComponent } from './enseignant-ajout/enseignant-ajout.component';
+import { EtudiantDetailsComponent } from './etudiant-details/etudiant-details.component';
+import { EtudiantAjoutComponent } from './etudiant-ajout/etudiant-ajout.component';
 
 
 
@@ -19,8 +21,10 @@ import { EnseignantAjoutComponent } from './enseignant-ajout/enseignant-ajout.co
     AppComponent,
     EnseignantComponent,
     EnseignantDetailComponent,
-    DashboardComponent,
-    EnseignantAjoutComponent
+    EtudiantComponent,
+    EnseignantAjoutComponent,
+    EtudiantDetailsComponent,
+    EtudiantAjoutComponent
   ],
   imports: [
     BrowserModule,
